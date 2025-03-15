@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: -apple-system, sans-serif;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --snd-bg-color: hwb(236 16% 11% / 0.274);
+  --text-color: black;
+  --main-color: green;
+
+}
+
+
+
+
+  /* ************************************************* header part css start ***************************************** */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  background: var(--main-color);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
+
+}
+
+.logo {
+  font-size: 3rem;
+  color: var(--bg-color);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+}
+
+.logo:hover {
+
+  transform: scale(1.05);
+}
+
+.navber a {
+  font-size: 1.9rem;
+  color: var(--bg-color);
+  margin-left: 4rem;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.navber a:hover,
+.navber a.active {
+  color: var(--text-color);
+}
+
+#menu_icon {
+  font-size: 3.6rem;
+  color: var(--bg-color);
+  cursor: pointer;
+}
+ /* 00000000000000000 )))))))))))))header part css end 999999999999999 #################################*/
+
+
+
+ /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ home part  css start ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_img img {
+  width: 25vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  cursor: pointer;
+  animation: floatImage 4s ease-in-out infinite;
+  transition: 0.4s ease;
+
+
+}
+
+.home_img img:hover {
+  box-shadow: 0 0 25px var(--main-color),
+               0 0 35px var(--main-color ),
+               0 0 45px var(--main-color);
+
+
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2.4rem);
+  }
+
+  100% {
+    transform: translateY(0);
+
+  }
+}
+
+.home_content {
+  margin-left: 5rem;
+}
+
+.home_content h3 {
+  font-size: 3.7rem;
+  font-weight: 700;
+
+}
+
+.home_content h3:nth-last-of-type(2) {
+  margin-bottom: 2rcap;
+
+}
+
+span {
+  color: var(--main-color);
+}
+
+.home_content h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.home_content p {
+  font-size: 1.6rem;
+}
+
+.social_media A {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-family: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.3s ease;
+  position: relative;
+
+}
+.social_media.CarElma img{
+  width: 30px;
+  height: 10px;
+  background-color: red;
+  outline-color: black;
+  
+
+}
+
+.social_media A:hover {
+  transform: scale(1.2) translateY(-10px);
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 25px var(--main-color);
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  box-shadow: none;
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 1.6rem var(--main-color);
+
+}
+/* ##############################################################home part  css end ####################################*/
+
+
+
+
+/* #######################################################about css  start #############################################*/
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: var(--bg-color);
+
+}
+
+.about_img img {
+  width: 25vw;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  cursor: pointer;
+  transition: 0 4s ease;
+}
+
+.about_img img:hover {
+  box-shadow: 0 0 25px var(--main-color),
+             0 0 35px var(--main-color ),
+             0 0 45px var(--main-color);
+ 
+}
+
+.heading{
+  font-size: 6rem;
+  text-align: center;
+}
+
+
+.about_container{
+  padding: 0 4rem;
+}
+
+.about_container h2{
+ text-align: left;
+ line-height: 1.2;
+
+}
+.about_container h3{
+  font-size: 3rem;
+
+}
+.about_container p{
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+
+}
+
+.service h2{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.service_contenl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.service_contenl .service_box{
+ flex: 1 1 30rem;
+ background: var(--snd-bg-color);
+ padding: 6rem 2rem 6rem;
+ border-radius: 2rem;
+ text-align: center;
+ border: 0.3rem solid var(--main-color);
+ transition: 0.3s ease;
+
+}
+.service_contenl .service_box:hover{
+   border-color: var(--main-color);
+   transform: scale(1.02) ;
+}
+.service_box i{
+  font-size: 7rem;
+  color: var(--main-color);
+}
+.service_box h3{
+  font-size: 2.6rem;
+  
+}
+.service_box p{
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+  
+}
+/* ###################### about part css end  ############################################################################# */
+
+
+
+
+
+
+
+
+/* ########################  Testimoinal css start ################################################## */
+
+.testimoinal{
+  
+  display: flex;
+}
+
+.wrapper{
+ background: var(--bg-color);
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+
+}
+      
+.testimoinal .heading{
+  margin-bottom: 5rem;
+ 
+}
+      
+.testimoinal_box{
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ background: var(--bg-color);
+
+}
+
+.testimoinal_box img{
+  width: 15rem;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  border: 3px solid var(--main-color);
+ 
+}
+
+.testimoinal .wrapper {
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 3rem;
+}
+
+.testimoinal_item{
+  min-height: 400px;
+  min-width: 300px;
+ background: var(--snd-bg-color);
+  border-radius: 50%;
+  margin: 0 2rem;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-color);
+  transition: 0.3s ease;
+
+}
+.testimoinal_item:hover{
+  border-color: var(--main-color);
+  transform: scale(1.02);
+
+}
+
+.testimoinal_item h2{
+  font-size: 3rem;
+}
+.testimoinal_item p{
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+
+
+ 
+}
+#star{
+  background-color: gold;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Testimoinal css end @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+
+
+    /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Contract css start $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+    .contract{
+     background: var(--bg-color);
+    }
+    .contract .heading{
+      text-align: center;
+    }
+    .contract h2{
+      margin-bottom: 3rem;
+      color: var(--main-color);
+   
+    }
+    
+    .contract form {
+      max-width: 80rem;
+      margin: 1rem auto;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .contract form .input_box{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .contract form .input_box input,
+    .contract form textarea{
+
+      width: 100%;
+      padding: 1.5rem;
+      font-family: 1.6rem;
+      color: var(--text-color);
+       background: var(--bg-color);
+        border-radius: 0.8rem;
+        border: 0.25rem solid var(--main-color);
+        margin: 0.7rem 0;
+        resize: none;
+      
+    }
+.contract form .input_box input{
+  width: 49%;
+  margin: 0.7rem 0.35rem;
+}
+    .contract form .btn{
+      margin-top: 2rem;
+    }
+ /* &&&&&&&&& $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ contract css end $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+    /*?????????????????????????????????? Footer part css start ??????????????????????????????????????????????? */
+    .footer{
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      padding: 40px 0 ;
+      background: var(--main-color);
+    }
+    .footer .social{
+      text-align: center;
+      padding-bottom: 25px;
+      color: var(--main-color);
+ 
+    }
+    .footer .social a{
+      font-size: 25px;
+       color: var(--main-color);
+       border: 2px solid var(--main-color);
+       width: 42px;
+       height: 42px;
+       line-height: 42px;
+       display: inline-block;
+       text-align: center;
+       border-radius: 50%;
+       margin: 0 10px;
+       transition: 0.3s ease;
+
+
+    }
+    .footer .social a:hover{
+      transform: scale(1.2) translateY(-10px);
+      background-color: var(--main-color);
+      color: var(--bg-color);
+      box-shadow: 0 0 25px var(--main-color);
+
+    }
+    .footer .copyright{
+      margin-top: 20px;
+      text-align: center;
+      font-size: 16px;
+      color: var(--text-color);    
+    }
+    /*?????????????????????????????????????????????????? Footer part css ?????????????????????????????????????*/
+
+
+
+
+
